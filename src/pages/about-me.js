@@ -84,7 +84,7 @@ class AboutMe extends React.Component {
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
             <t.H1 green align="center">
-              MATEO PÉREZ SALAZ
+              MATEO PÉREZ SALAZAR
             </t.H1>
             <t.LargeP align="center" max70>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
