@@ -87,15 +87,12 @@ class AboutMe extends React.Component {
               MATEO PÉREZ SALAZAR
             </t.H1>
             <t.LargeP align="center" max70>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+            Mateo perez salazar es emprendedor,desarrollador web ,amante de la tecnología y con mucha ambición por innovar. Con 10 años de experiencia desarrollando para móvil y web.
+            Mateo es actualmente co-fundador de buenapeople.com y CTO . Desarrollador web con 10 años de experiencia en diferentes lenguajes como PHP, Javascript o python.
             </t.LargeP>
           </AboveFold>
           <Content>
-            <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="Name Surname" className="avatar" />
+            <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="mateo Pérez" className="avatar" />
           </Content>
         </Layout>
         <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
@@ -108,7 +105,7 @@ export default AboutMe;
 
 export const pageQuery = graphql`
   query {
-    avatarAbout: file(relativePath: { eq: "avatar.jpg" }) {
+    avatarAbout: file(relativePath: { eq: "mateo.webp" }) {
       ...fluidImage
     }
   }

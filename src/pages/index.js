@@ -149,7 +149,7 @@ class Homepage extends React.Component {
               Mateo Pérez Salazar
             </t.H1>
             <t.LargeP align="center" max45>
-              Desarrollador web y emprendedor. Actual CTO de buenaPeople.com
+              Desarrollador web | emprendedor | CTO de buenaPeople.com
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
               Contratame
@@ -160,7 +160,8 @@ class Homepage extends React.Component {
              Experiencia
             </t.H2>
             <t.P align="center" max70 className="who-desc">
-              Desarrollador web con 10 años de experiencia en diferentes lenguajes como PHP, Javascript o python.
+            Mateo perez salazar es emprendedor,desarrollador web ,amante de la tecnología y con mucha ambición por innovar. Con 10 años de experiencia desarrollando para móvil y web.
+            Mateo es actualmente co-fundador de buenapeople.com y CTO . Desarrollador web con 10 años de experiencia en diferentes lenguajes como PHP, Javascript o python.
             </t.P>
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
@@ -228,9 +229,9 @@ class Homepage extends React.Component {
           </Block>
           <WorkWithMe>
             <t.H1 green>Contacta conmigo</t.H1>
-            <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
+            <t.LargeP>Tienes un proyecto en concreto y necesitas asesoría? Hablemos ! </t.LargeP>
             <HireMe onClick={this.openContactPopup} book>
-              Contact me
+              Contacta conmigo
             </HireMe>
           </WorkWithMe>
         </Layout>
@@ -244,7 +245,7 @@ export default Homepage;
 
 export const pageQuery = graphql`
   query {
-    avatarHomepage: file(relativePath: { eq: "avatar.jpg" }) {
+    avatarHomepage: file(relativePath: { eq: "mateo.webp" }) {
       ...fluidImage
     }
   }

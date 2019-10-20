@@ -9,7 +9,7 @@ import { withTheme } from 'styled-components';
 import * as t from '../Typography';
 import { lighten, darken } from 'polished';
 import Helmet from 'react-helmet';
-import Avatar from '../images/avatar.jpg';
+import Avatar from '../images/mateo.webp';
 
 const HeaderWrapper = styled.div`
   height: auto;
@@ -212,7 +212,7 @@ class Header extends React.Component {
         </Helmet>
         <ContentWrapper>
           <Logo href="/">
-            <img src={Avatar} alt="Name Surname" />
+            <img src={Avatar} alt="Mateo Pérez" />
           </Logo>
           <HeaderNav>
             <Burger alt="Menu" onClick={this.handleBurgerClick} scrolled={scrolled} theme={theme}>
@@ -250,12 +250,12 @@ class Header extends React.Component {
               </Burger>
               <li>
                 <Button theme={theme} to="about-me">
-                  About me
+                  Acerca de mi
                 </Button>
               </li>
               <li>
                 <HireMe theme={theme} onClick={this.openContactPopup} book>
-                  Contact me
+                  Contacta conmigo
                 </HireMe>
               </li>
             </MenuList>
