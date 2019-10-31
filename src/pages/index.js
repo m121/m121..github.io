@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
-import Placeholder from '../images/placeholder.png';
+import Placeholder from '../images/glotonapp.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -157,11 +157,13 @@ class Homepage extends React.Component {
           </AboveFold>
           <Content>
             <t.H2 primary align="center" bold>
-             Experiencia
+              Experiencia
             </t.H2>
             <t.P align="center" max70 className="who-desc">
-            Mateo perez salazar es emprendedor,desarrollador web ,amante de la tecnología y con mucha ambición por innovar. Con 10 años de experiencia desarrollando para móvil y web.
-            Mateo es actualmente co-fundador de buenapeople.com y CTO . Desarrollador web con 10 años de experiencia en diferentes lenguajes como PHP, Javascript o python.
+              Mateo perez salazar es emprendedor,desarrollador web ,amante de la tecnología y con mucha ambición por
+              innovar. Con 10 años de experiencia desarrollando para móvil y web. Mateo es actualmente co-fundador de
+              buenapeople.com y CTO . Desarrollador web con 10 años de experiencia en diferentes lenguajes como PHP,
+              Javascript o python.
             </t.P>
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
@@ -170,19 +172,26 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Placeholder} alt="glotonapp" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="#">
-                  Lorem ipsum
+                <t.H2 bold>Gloton App</t.H2>
+                <t.P>Buscador de restaurantes (ejemplo: 'Los angeles','New york','Chicago','Madrid')</t.P>
+                <t.P>He usado Reactjs|Material-ui| API Zomato</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
+                  target="_blank"
+                  href="https://vigilant-heyrovsky-35d807.netlify.com/"
+                >
+                  Link
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
           </Block>
-          <Block>
+          {/*  <Block>
             <BlockContent>
               <DivWrapper>
                 <t.H2 bold>Placeholder website</t.H2>
@@ -226,7 +235,7 @@ class Homepage extends React.Component {
                 <ItemImage src={Placeholder} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
-          </Block>
+        </Block>*/}
           <WorkWithMe>
             <t.H1 green>Contacta conmigo</t.H1>
             <t.LargeP>Tienes un proyecto en concreto y necesitas asesoría? Hablemos ! </t.LargeP>
