@@ -4,6 +4,7 @@ import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Placeholder from '../images/glotonapp.png';
+import Bands from '../images/crudbands.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -191,22 +192,29 @@ class Homepage extends React.Component {
               </DivWrapper>
             </BlockContent>
           </Block>
-          {/*  <Block>
+          <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="#">
-                  Lorem ipsum
+                <t.H2 bold>CRUD Bandas</t.H2>
+                <t.P>Una sencilla api hecha en Expressjs</t.P>
+                <t.p>He usado Expressjs | Mongo db</t.p>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
+                  target="_blank"
+                  href="https://github.com/m121/bandscrudexpress"
+                >
+                  Repositorio en Github
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Bands} alt="Bands crud expressjs" />
               </DivWrapper>
             </BlockContent>
           </Block>
-          <Block>
+          {/*   <Block>
             <BlockContent>
               <DivWrapper>
                 <ItemImage src={Placeholder} alt="Placeholder title" />
