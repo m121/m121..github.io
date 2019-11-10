@@ -197,7 +197,7 @@ class Homepage extends React.Component {
               <DivWrapper>
                 <t.H2 bold>CRUD Bandas</t.H2>
                 <t.P>Una sencilla api hecha en Expressjs</t.P>
-                <t.p>He usado Expressjs | Mongo db</t.p>
+                <t.P>He usado Expressjs | Mongo db</t.P>
                 <LinkButton
                   primary
                   bold
@@ -214,36 +214,6 @@ class Homepage extends React.Component {
               </DivWrapper>
             </BlockContent>
           </Block>
-          {/*   <Block>
-            <BlockContent>
-              <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
-              </DivWrapper>
-              <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="#">
-                  Lorem ipsum
-                </LinkButton>
-              </DivWrapper>
-            </BlockContent>
-          </Block>
-          <Block>
-            <BlockContent>
-              <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a" target="_blank" href="#">
-                  Lorem ipsum
-                </LinkButton>
-              </DivWrapper>
-              <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
-              </DivWrapper>
-            </BlockContent>
-        </Block>*/}
           <WorkWithMe>
             <t.H1 green>Contacta conmigo</t.H1>
             <t.LargeP>Tienes un proyecto en concreto y necesitas asesoría? Hablemos ! </t.LargeP>
