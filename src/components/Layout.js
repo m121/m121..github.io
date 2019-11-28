@@ -35,7 +35,7 @@ const Layout = ({ children, theme, bigFooter, mediumFooter, openContactPopup }) 
           meta={[
             {
               name: 'description',
-              content: 'Portfolio built using Gatsby and React'
+              content: 'Portafolio Mateo Perez , desarrollador y emprendedor'
             },
             { name: 'keywords', content: 'portfolio' }
           ]}
