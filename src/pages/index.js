@@ -5,6 +5,9 @@ import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Placeholder from '../images/glotonapp.png';
 import Bands from '../images/crudbands.png';
+import Todolistimg from '../images/todolistsockets.png';
+import Formimg from '../images/form.png';
+import Tvserieimg from '../images/seriemaster.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -214,6 +217,76 @@ class Homepage extends React.Component {
               </DivWrapper>
             </BlockContent>
           </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <ItemImage src={Todolistimg} alt="To-do-list-sockets" />
+              </DivWrapper>
+              <DivWrapper>
+                <t.H2 bold>To-do list / Lista de tareas</t.H2>
+                <t.P>
+                  Un agregador de tareas con su estado.Hecho con sockets para obtener una comunicación bidireccional
+                  cliente-servidor
+                </t.P>
+                <t.P>He usado Expressjs|Socket.IO</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
+                  target="_blank"
+                  href="https://github.com/m121/todolistsockets"
+                >
+                  Repositorio en Github
+                </LinkButton>
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <t.H2 bold>Formulario de validación</t.H2>
+                <t.P>Un formulario de validación de registro hecho en Javascript puro</t.P>
+                <t.P>He usado Javascript | bootstrap</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
+                  target="_blank"
+                  href="https://github.com/m121/formvalidation"
+                >
+                  Repositorio en Github
+                </LinkButton>
+              </DivWrapper>
+              <DivWrapper>
+                <ItemImage src={Formimg} alt="Formulario-validacion-registro" />
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <ItemImage src={Tvserieimg} alt="buscador de tv series" />
+              </DivWrapper>
+              <DivWrapper>
+                <t.H2 bold>Buscador de series</t.H2>
+                <t.P>Buscador de series de televisión.Busca por nombre</t.P>
+                <t.P>He usado Boostrap|Javascript|OMDb api </t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
+                  target="_blank"
+                  href="https://jolly-edison-f11295.netlify.com/"
+                >
+                  Link
+                </LinkButton>
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+
           <WorkWithMe>
             <t.H1 green>Contacta conmigo</t.H1>
             <t.LargeP>Tienes un proyecto en concreto y necesitas asesoría? Hablemos ! </t.LargeP>
