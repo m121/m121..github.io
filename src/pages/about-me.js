@@ -7,6 +7,7 @@ import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
+import { HireMe, LinkButton } from '../components/Button.js';
 
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
@@ -87,8 +88,10 @@ class AboutMe extends React.Component {
               MATEO PÉREZ SALAZAR
             </t.H1>
             <t.LargeP align="center" max70>
-            Mateo perez salazar es emprendedor,desarrollador web ,amante de la tecnología y con mucha ambición por innovar. Con 10 años de experiencia desarrollando para móvil y web.
-            Mateo es actualmente co-fundador de buenapeople.com y CTO . Desarrollador web con 10 años de experiencia en diferentes lenguajes como PHP, Javascript o python.
+              Mateo Perez Salazar is an entrepreneur, fullstack developer and tech leader. Mateo was the co-founder and
+              CTO of buenaPeople startup in Colombia for 3 years. My passion is to learn every day (tech,
+              entrepreneurship, improve my skills), and my hobbies are to watch series, to code(of course!), and to
+              read.
             </t.LargeP>
           </AboveFold>
           <Content>

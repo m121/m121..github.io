@@ -153,21 +153,22 @@ class Homepage extends React.Component {
               Mateo Pérez Salazar
             </t.H1>
             <t.LargeP align="center" max45>
-              Desarrollador web | emprendedor | CTO de buenaPeople.com
+              Fullstack developer | entrepreneur | ex CTO of buenaPeople.com
             </t.LargeP>
-            <HireMe large onClick={this.openContactPopup} book>
+            {/*<HireMe large onClick={this.openContactPopup} book>
               Contratame
-            </HireMe>
+            </HireMe>*/}
           </AboveFold>
           <Content>
             <t.H2 primary align="center" bold>
-              Experiencia
+              Background
             </t.H2>
             <t.P align="center" max70 className="who-desc">
-              Mateo perez salazar es emprendedor,desarrollador web ,amante de la tecnología y con mucha ambición por
-              innovar. Con 10 años de experiencia desarrollando para móvil y web. Mateo es actualmente co-fundador de
-              buenapeople.com y CTO . Desarrollador web con 10 años de experiencia en diferentes lenguajes como PHP,
-              Javascript o python.
+              Mateo Perez Salazar is an entrepreneur, fullstack developer and tech leader. Mateo was the co-founder and
+              CTO of buenaPeople startup in Colombia for 3 years.
+              <br />
+              My passion is to learn every day (tech, entrepreneurship, improve my skills), and my hobbies are to watch
+              series, to code(of course!), and to read.
             </t.P>
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
@@ -180,8 +181,8 @@ class Homepage extends React.Component {
               </DivWrapper>
               <DivWrapper>
                 <t.H2 bold>Gloton App</t.H2>
-                <t.P>Buscador de restaurantes (ejemplo: 'Los angeles','New york','Chicago','Madrid')</t.P>
-                <t.P>He usado Reactjs|Material-ui| API Zomato</t.P>
+                <t.P>Restaurant searcher (ex: 'Los angeles','New york','Chicago','Madrid')</t.P>
+                <t.P>I use Reactjs|Material-ui| API Zomato</t.P>
                 <LinkButton
                   primary
                   bold
@@ -198,9 +199,9 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>CRUD Bandas</t.H2>
-                <t.P>Una sencilla api hecha en Expressjs</t.P>
-                <t.P>He usado Expressjs | Mongo db</t.P>
+                <t.H2 bold>CRUD bands</t.H2>
+                <t.P>A very simple API in Expressjs</t.P>
+                <t.P>I use Expressjs | Mongo db</t.P>
                 <LinkButton
                   primary
                   bold
@@ -209,7 +210,7 @@ class Homepage extends React.Component {
                   target="_blank"
                   href="https://github.com/m121/bandscrudexpress"
                 >
-                  Repositorio en Github
+                  Github repository
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
@@ -223,12 +224,9 @@ class Homepage extends React.Component {
                 <ItemImage src={Todolistimg} alt="To-do-list-sockets" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>To-do list / Lista de tareas</t.H2>
-                <t.P>
-                  Un agregador de tareas con su estado.Hecho con sockets para obtener una comunicación bidireccional
-                  cliente-servidor
-                </t.P>
-                <t.P>He usado Expressjs|Socket.IO</t.P>
+                <t.H2 bold>To-do list</t.H2>
+                <t.P>A to-do list with its status. I use sockets for a bidirectional communication client-server</t.P>
+                <t.P>I use Expressjs|Socket.IO</t.P>
                 <LinkButton
                   primary
                   bold
@@ -237,7 +235,7 @@ class Homepage extends React.Component {
                   target="_blank"
                   href="https://github.com/m121/todolistsockets"
                 >
-                  Repositorio en Github
+                  Github repository
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -245,9 +243,9 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Formulario de validación</t.H2>
-                <t.P>Un formulario de validación de registro hecho en Javascript puro</t.P>
-                <t.P>He usado Javascript | bootstrap</t.P>
+                <t.H2 bold>Form validation</t.H2>
+                <t.P>A form validation sign up in vanilla Javascript</t.P>
+                <t.P>I use Javascript | bootstrap</t.P>
                 <LinkButton
                   primary
                   bold
@@ -256,23 +254,23 @@ class Homepage extends React.Component {
                   target="_blank"
                   href="https://github.com/m121/formvalidation"
                 >
-                  Repositorio en Github
+                  Github repository
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Formimg} alt="Formulario-validacion-registro" />
+                <ItemImage src={Formimg} alt="form-validation" />
               </DivWrapper>
             </BlockContent>
           </Block>
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Tvserieimg} alt="buscador de tv series" />
+                <ItemImage src={Tvserieimg} alt="Series searcher" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Buscador de series</t.H2>
-                <t.P>Buscador de series de televisión.Busca por nombre</t.P>
-                <t.P>He usado Boostrap|Javascript|OMDb api </t.P>
+                <t.H2 bold>Series searcher</t.H2>
+                <t.P>Series searcher. Search by name</t.P>
+                <t.P>I use Boostrap|Javascript|OMDb api </t.P>
                 <LinkButton
                   primary
                   bold
@@ -288,11 +286,38 @@ class Homepage extends React.Component {
           </Block>
 
           <WorkWithMe>
-            <t.H1 green>Contacta conmigo</t.H1>
-            <t.LargeP>Tienes un proyecto en concreto y necesitas asesoría? Hablemos ! </t.LargeP>
-            <HireMe onClick={this.openContactPopup} book>
-              Contacta conmigo
-            </HireMe>
+            <t.H1 green>Looking for more information? </t.H1>
+            <t.LargeP>
+              <LinkButton
+                primary
+                bold
+                className="link"
+                as="a"
+                target="_blank"
+                href="https://www.linkedin.com/in/mateop/"
+              >
+                Linkedin
+              </LinkButton>{' '}
+              |{' '}
+              <LinkButton primary bold className="link" as="a" target="_blank" href="https://github.com/m121">
+                Github
+              </LinkButton>{' '}
+              |{' '}
+              <LinkButton
+                primary
+                bold
+                className="link"
+                as="a"
+                target="_blank"
+                href="mailto:mateo.perez.salazar@gmail.com"
+              >
+                mateo.perez.salazar@gmail.com
+              </LinkButton>
+            </t.LargeP>
+
+            {/* <HireMe onClick={this.openContactPopup} book>
+              Contact with me!
+            </HireMe>*/}
           </WorkWithMe>
         </Layout>
         <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />

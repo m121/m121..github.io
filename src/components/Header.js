@@ -244,18 +244,18 @@ class Header extends React.Component {
                 </g>
               </svg>
             </Burger>
-            <MenuList {...showMobile && { showMobile }}>
+            <MenuList {...(showMobile && { showMobile })}>
               <Burger onClick={this.handleClose}>
                 <img alt="Close menu" src={Close} />
               </Burger>
               <li>
                 <Button theme={theme} to="about-me">
-                  Acerca de mi
+                  About me
                 </Button>
               </li>
               <li>
                 <HireMe theme={theme} onClick={this.openContactPopup} book>
-                  Contacta conmigo
+                  Contact with me
                 </HireMe>
               </li>
             </MenuList>
